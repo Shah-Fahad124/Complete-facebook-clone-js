@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(247, 240, 240, 0.436);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: 1px 2px 5px gray;
+
+}
+
+header i:hover {
+    cursor: pointer;
+}
+
+.nav-left {
+    display: flex;
+    padding: .5em;
+    font-size: 1.5rem;
+    align-items: center;
+}
+
+.search-Bar {
+    background-color: rgb(224, 215, 215);
+    border-radius: 50%;
+    padding: .3em;
+    margin-left: .3em;
+
+}
+
+.middle-nav {
+    display: flex;
+    gap: 1.5em;
+    font-size: 1.5rem;
+    margin-left: 4em;
+    align-items: center;
+
+}
+
+.middle-nav i:hover {
+    background-color: rgb(194, 177, 177);
+    padding: .4em;
+    border-radius: 50%;
+}
+
+.right-side-Bar {
+    display: flex;
+    gap: 1em;
+    font-size: 1.5rem;
+    align-items: center;
+
+}
+
+.fa-grip {
+    background-color: rgb(224, 215, 215);
+    border-radius: 50%;
+    padding: .3em;
+}
+
+.fa-facebook-messenger {
+    background-color: rgb(224, 215, 215);
+    border-radius: 50%;
+    padding: .3em;
+}
+
+.fa-bell {
+    background-color: rgb(224, 215, 215);
+    border-radius: 50%;
+    padding: .3em;
+}
+
+/* main body  */
+
+main {
+    width: 80%;
+    margin: 1em auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    column-gap: 1em;
+
+}
+
+.left-sideBar {
+    background-color: #c7e4d194;
+    /* height: 100vh; */
+
+}
+
+.main-content {
+    background-color: #819989;
+}
+
+.right-sideBar {
+    background-color: #c7e4d194;
+}
+
+.left-profile-card {
+    display: flex;
+    align-items: center;
+}
+
+.user-pic img {
+    width: 2em;
+    border-radius: 50%;
+    margin: .3em;
+}
+
+.name p {
+    font-size: 1.3rem;
+    padding-left: .5em;
+}
+
+.sidebar-options {
+    display: flex;
+    gap: .8em;
+    padding: .5em;
+    margin: 1em 0;
+}
+
+.sidebar-options:hover {
+    background-color: #c2d4c8;
+    cursor: pointer;
+}
+
+
+
+.story-container {
+    padding: .5em;
+    position: relative;
+
+}
+
+.whole-story-container {
+    display: flex;
+}
+
+.each-story-img img {
+    /* object-fit: cover; */
+    width: 100%;
+    height: 43vh;
+    border-radius: .5em;
+
+}
+
+
+.each-story-img:hover {
+    scale: 1.03;
+}
+
+
+
+.img-content .image {
+    position: absolute;
+    top: 1%;
+    left: 3%;
+}
+
+.img-content .image:hover {
+    cursor: pointer;
+}
+
+.img-name p {
+    position: absolute;
+    color: white;
+    top: 80%;
+    left: 10%;
+}
+
+.img-content img {
+    border: 4px solid green;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    height: 130vh;
+}
+
+
+
+.post-message {
+    width: 80%;
+    background-color: #fff;
+    margin: 3em auto;
+    box-shadow: 0px 3px 5px gray;
+    height: 8em;
+    border-radius: 10px;
+    margin-bottom: 0;
+}
+
+.post-top {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.choose-file {
+    margin: 1em;
+}
+
+.post-top input {
+    margin-left: 10px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    background-color: rgba(128, 128, 128, 0.214);
+    padding: 8px;
+    border-radius: 10px;
+    width: 90%;
+}
+
+.user-avator img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 5rem;
+}
+
+.right-sideBar {
+    padding: .2em .6em;
+    display: flex;
+    flex-direction: column;
+    gap: .4em;
+    color: rgb(61, 57, 57);
+}
+
+
+.title {
+    display: flex;
+    align-items: center;
+    margin: 1em 0;
+    gap: .7em;
+}
+
+.title-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+}
+
+.title-content img {
+    border-radius: 1em;
+}
+
+.title img {
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+}
+
+.hr-line {
+    margin-top: 2em;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.contact-container .row {
+    display: flex;
+    align-items: center;
+    gap: .5em;
+}
+
+
+.contact-container .row:hover {
+    cursor: pointer;
+    background-color: #c2d4c8;
+}
+
+
+.contact-container img {
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+}
+
+.online {
+    position: relative;
+}
+
+.online-circle {
+    background-color: green;
+    width: .7em;
+    height: .7em;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 4px;
+    left: 1.6em;
+}
+
+
+
+.post-image-container {
+    padding: 3em;
+    overflow: scroll;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.post-image-container img {
+    margin-top: 0;
+    width: 100%;
+    height: 130%;
+}
